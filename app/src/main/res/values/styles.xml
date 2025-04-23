@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Dasar Aplikasi -->
+    <style name="Theme.ProjectPraktikumPAM6" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Warna utama -->
+        <item name="colorPrimary">#009688</item> <!-- Teal 500 -->
+        <item name="colorPrimaryVariant">#00796B</item> <!-- Teal 700 -->
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Warna sekunder -->
+        <item name="colorSecondary">#80CBC4</item> <!-- Teal 200 -->
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <!-- Warna background dan teks -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- Warna status bar -->
+        <item name="android:statusBarColor">#009688</item> <!-- Teal 500 -->
+
+        <!-- Mengubah ikon status bar (Light atau Dark) berdasarkan warna background -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Menggunakan ikon berwarna gelap jika background terang -->
+    </style>
+</resources>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Definisi Warna untuk Tema -->
+    <color name="colorPrimary">#009688</color> <!-- Teal 500 -->
+    <color name="colorPrimaryDark">#00796B</color> <!-- Teal 700 -->
+    <color name="colorAccent">#80CBC4</color> <!-- Teal 200 -->
+
+    <!-- Warna untuk teks -->
+    <color name="textPrimary">#212121</color> <!-- Warna Teks Utama (biasanya hitam gelap) -->
+    <color name="textSecondary">#757575</color> <!-- Warna Teks Sekunder (biasanya abu-abu) -->
+
+    <!-- Warna Latar Belakang -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- Putih -->
+</resources>
