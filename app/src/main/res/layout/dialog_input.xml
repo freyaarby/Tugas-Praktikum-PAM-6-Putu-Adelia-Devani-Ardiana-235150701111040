@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- EditText untuk Nama Peminjam -->
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Peminjam"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field Nama Peminjam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText untuk Judul Buku -->
+    <EditText
+        android:id="@+id/etJudul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Judul Buku"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field Judul Buku"
+        app:layout_constraintTop_toBottomOf="@id/etNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText untuk Tanggal Pinjam -->
+    <EditText
+        android:id="@+id/etPinjam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Pinjam"
+        android:inputType="date"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field Tanggal Pinjam"
+        app:layout_constraintTop_toBottomOf="@id/etJudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText untuk Tanggal Kembali -->
+    <EditText
+        android:id="@+id/etKembali"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Kembali"
+        android:inputType="date"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field Tanggal Kembali"
+        app:layout_constraintTop_toBottomOf="@id/etPinjam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Button Simpan"
+        app:layout_constraintTop_toBottomOf="@id/etKembali"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Batal -->
+    <Button
+        android:id="@+id/btnBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Button Batal"
+        app:layout_constraintTop_toBottomOf="@id/btnSimpan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

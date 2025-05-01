@@ -1,4 +1,4 @@
-package com.example.projectpraktikumpam6
+package com.example.projectpraktikumpam6.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -15,13 +15,13 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Ambil data dari intent
-        val nama = intent.getStringExtra("NAMA")
-        val judul = intent.getStringExtra("JUDUL")
-        val pinjam = intent.getStringExtra("PINJAM")
-        val kembali = intent.getStringExtra("KEMBALI")
+        // Ambil data dari intent dengan aman
+        val nama = intent.getStringExtra("NAMA") ?: "Nama tidak tersedia"
+        val judul = intent.getStringExtra("JUDUL") ?: "Judul tidak tersedia"
+        val pinjam = intent.getStringExtra("PINJAM") ?: "Tanggal pinjam tidak tersedia"
+        val kembali = intent.getStringExtra("KEMBALI") ?: "Tanggal kembali tidak tersedia"
 
-        // Tampilkan ke TextView
+        // Tampilkan data ke TextView
         binding.tvNama.text = "Nama Peminjam: $nama"
         binding.tvJudulBuku.text = "Judul Buku: $judul"
         binding.tvTanggalPinjam.text = "Tanggal Pinjam: $pinjam"
